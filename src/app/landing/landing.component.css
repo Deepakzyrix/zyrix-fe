@@ -1,0 +1,255 @@
+/* src/styles.css */
+
+
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('/assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Popup Styling */
+.fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.navbar {
+  font-family: 'Neue Montreal', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+
+}
+
+.hero{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test {
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 20px;
+  color:rgb(17, 6, 47)
+}
+
+
+.hero {
+  position: relative;
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 3px; /* Line thickness */
+  background-color: rgba(255, 255, 255, 0.2); /* Line color */
+}
+
+.hero::before {
+  height: 250px; /* Length of the first straight segment */
+  top: 0; /* Starting point */
+  left: 150px; /* Position from the left */
+}
+
+.hero::after {
+  height: 250px; /* Length of the first straight segment */
+  top: 0; /* Starting point */
+  right: 150px; /* Position from the right */
+}
+
+.hero .line-bend-left,
+.hero .line-bend-right {
+  content: '';
+  position: absolute;
+  width: 3px; /* Thickness of the line */
+  background-color: rgba(255, 255, 255, 0.2); /* Line color */
+   /* Create the bend */
+}
+
+.hero .line-bend-left {
+  height: 150px; /* Length of the bend */
+  top: 212px; /* Where the bend starts */
+  left: 215px; /* Adjust to align with the first segment */
+  transform: rotate(120deg);
+}
+
+.hero .line-bend-right {
+  height: 150px; /* Length of the bend */
+  top: 213px; /* Where the bend starts */
+  right: 215px; /* Adjust to align with the first segment */
+  transform: rotate(-120deg);
+}
+
+.hero .line-bottom-left,
+.hero .line-bottom-right {
+  content: '';
+  position: absolute;
+  width: 3px; /* Line thickness */
+  background-color: rgba(255, 255, 255, 0.2); /* Line color */
+}
+
+.hero .line-bottom-left {
+  height: 150px; /* Length of the second straight segment */
+  top: 325px; /* Position after the bend */
+  left: 280px; /* Align with the first segment */
+}
+
+.hero .line-bottom-right {
+  height: 150px; /* Length of the second straight segment */
+  top: 325px; /* Position after the bend */
+  right: 280px; /* Align with the first segment */
+}
+
+
+.product-card {
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+/* Card hover effect */
+.product-card:hover {
+  transform: scale(1.1); /* Enlarge the card */
+  z-index: 10; /* Bring the hovered card to the front */
+}
+
+/* Adjust spacing between cards when one is hovered */
+.grid > .product-card {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  transform: scale(1); /* Default state */
+  z-index: 1; /* Cards behind the hovered card */
+}
+
+/* Ensure the first and third cards don't overlap on hover */
+.product-card:nth-child(1):hover {
+  transform: scale(1.1);
+}
+
+.product-card:nth-child(3):hover {
+  transform: scale(1.1);
+}
+
+.product-card:nth-child(2):hover {
+  transform: scale(1.1);
+}
+
+
+/* General Styling */
+.bg-bluee {
+  background-color: #1e3a8a;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hexagon Styling */
+.hexagon {
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+}
+
+.hexagon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Left and Right Titles */
+.box {
+  width: 220px;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Positioning and Spacing */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.left-8 {
+  left: 8rem;
+}
+
+.right-8 {
+  right: 8rem;
+}
+
+.space-y-12 > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* Lines */
+[data-line="vision"]:before,
+[data-line="values"]:before,
+[data-line="mission"]:before,
+[data-line="goals"]:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: #1e3a8a;
+}
+
+[data-line="vision"]:before {
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
+[data-line="values"]:before {
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+
+[data-line="mission"]:before {
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+
+[data-line="goals"]:before {
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+

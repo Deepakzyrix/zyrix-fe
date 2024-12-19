@@ -1,0 +1,516 @@
+<div class="bg-white text-black mx-0 px-8 py-1 flex justify-between items-center navbar">
+
+  <div class="text-2xl font-bold">
+    <a href="#" class="hover:text-orange-500">ZYRIX</a>
+  </div>
+
+
+  <div class="md:hidden">
+    <button (click)="toggleMenu()" class="text-black focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+
+  <div
+    [class.hidden]="isMenuHidden"
+    class="w-full md:flex md:flex-row flex-col pb-3 md:w-auto space-y-4 pl-[80px] md:space-y-0 md:space-x-14 text-[16px] mt-4 md:mt-0"
+  >
+    <a href="#" class="hover:text-orange-500">HOME</a>
+    <a href="#" class="hover:text-orange-500">ABOUT US</a>
+    <a href="#" class="hover:text-orange-500">PRODUCTS</a>
+    <a href="#" class="hover:text-orange-500">CONTACT</a>
+  </div>
+
+  <div class="flex space-x-4 mt-4 md:mt-0 pb-3">
+    <button (click)="onSubmission()" class="px-4 py-2 rounded-full border border-black-600 text-gray-500 hover:bg-steelblue hover:text-white transition" >
+      Login
+    </button>
+    <button class="px-4 py-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 hover:text-white transition">
+      Sign Up
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<!-- Hero Section -->
+<div class="bg-bluee text-white mx-8 px-4 md:px-8 py-8 md:py-12 h-[850px] rounded-tl-3xl rounded-tr-3xl rounded-br-3xl rounded-bl-3xl hero">
+  <div class="container mx-auto my-7 text-center">
+
+    <div class="line-bend-left"></div>
+    <div class="line-bend-right"></div>
+    <div class="line-bottom-left"></div>
+    <div class="line-bottom-right"></div>
+
+
+    <div class="flex justify-center mb-6">
+      <button class="flex items-center justify-center bg-gray-500 text-white rounded-full px-3 py-2 text-xs backdrop-blur-sm bg-gray-500 bg-opacity-40  hover:text-steelblue transition shadow-lg hover:shadow-xl">
+        <i class="fa-brands fa-strava text-sm mr-2"></i>
+        AI SOLUTIONS
+      </button>
+    </div>
+
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 mt-17 mx-4 md:mx-40 md:px-20 leading-snug md:leading-relaxed">
+      Transforming the future by making Technology work for YOU
+    </h1>
+
+    <p class="text-sm md:text-lg px-4 md:px-80 leading-normal md:leading-loose">
+      Empowering you with innovative solutions, turning challenges into opportunities.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center mt-6 space-y-4 md:space-y-0 md:space-x-6">
+      <button class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">
+        Get Started
+      </button>
+      <!-- <button class="px-6 py-3 bg-white text-black font-semibold rounded-full border border-steelblue hover:bg-black hover:text-white transition">
+        Try for Free
+      </button> -->
+    </div>
+
+    <div class="flex justify-center mt-4 mb-10">
+      <img src="assets/images/BG_IMG.png" alt="Your Image Description" class="w-[750px] max-w-full h-auto rounded-lg">
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+<div class="bg-white py-12">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    <!-- First Item -->
+    <div>
+      <h2 class="text-5xl font-bold text-black pb-3">1M+</h2>
+      <p class="text-gray-600 mt-2">Vehicles empowered<br />with AI-driven solutions</p>
+    </div>
+
+    <!-- Second Item -->
+    <div>
+      <h2 class="text-5xl font-bold text-black pb-3">99.9%</h2>
+      <p class="text-gray-600 mt-2">Precision in<br />autonomous systems</p>
+    </div>
+
+    <!-- Third Item -->
+    <div>
+      <h2 class="text-5xl font-bold text-black pb-3">24/7</h2>
+      <p class="text-gray-600 mt-2">Support for smarter<br />mobility</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+<vision></vision> -->
+<div class="bg-blue-50 py-16 px-4 mx-8 h-auto rounded-tl-3xl rounded-tr-3xl rounded-br-3xl rounded-bl-3xl ">
+  <div class="container mx-auto text-center">
+
+
+    <div class="mb-8">
+      <button class="bg-steelblue text-white text-s px-4 py-2 rounded-full uppercase tracking-wide">
+        <i class="fa-solid fa-lightbulb text-sm mr-2"></i>
+        About Us
+      </button>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-4">
+        Defining the Path for Excellence
+      </h2>
+      <p class="text-gray-600 mt-2">
+        Our guiding principles inspire innovation, sustainability, and progress for the future.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12 px-4 md:px-0">
+
+      <!-- Vision Card -->
+      <div class="bg-babyblue p-6 min-h-[300px] rounded-xl shadow-md hover:shadow-xl transition transform hover:scale-110">
+        <div class="mb-4">
+          <i class="fa-solid fa-eye text-orange-500 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Vision</h3>
+        <p class="text-white mt-2">
+          To pioneer innovation and transform industries through cutting-edge solutions that create a better tomorrow.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="bg-aquamarine p-6 min-h-[300px] rounded-xl text-white shadow-md hover:shadow-xl transition transform hover:scale-110">
+        <div class="mb-4">
+          <i class="fa-solid fa-bullseye text-orange-500 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold">Mission</h3>
+        <p class="mt-2">
+          To empower businesses with advanced technologies that streamline operations and fuel growth.
+        </p>
+      </div>
+
+      <!-- Values Card -->
+      <div class="bg-tiffanyblue p-6 min-h-[300px] rounded-xl shadow-md hover:shadow-xl transition transform hover:scale-110">
+        <div class="mb-4">
+          <i class="fa-solid fa-handshake text-orange-500 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Values</h3>
+        <p class="text-white mt-2">
+          Integrity, collaboration, and customer-centricity drive everything we do to create lasting value.
+        </p>
+      </div>
+
+      <!-- Goals Card -->
+      <div class="bg-bluegreen p-6 min-h-[300px] rounded-xl shadow-md hover:shadow-xl transition transform hover:scale-110">
+        <div class="mb-4">
+          <i class="fa-solid fa-flag text-orange-500 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-white">Goals</h3>
+        <p class="text-white mt-2">
+          To deliver sustainable solutions that exceed expectations and shape the future of emerging technology.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-blue-50 py-16 px-4 mx-8 h-auto rounded-3xl mt-10">
+  <div class="container mx-auto text-center">
+    <div class="mb-8">
+      <button class="bg-steelblue text-white text-s px-4 py-2 rounded-full uppercase tracking-wide">
+        <i class="fa-brands fa-strava text-sm mr-2"></i>
+        Products
+      </button>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-4">
+        Explore tools for bringing your vision to life
+      </h2>
+      <p class="text-gray-600 mt-2">
+        From cutting-edge AI solutions to streamlined automotive innovations, designed for modern businesses.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 px-4 md:px-0">
+      <div class="product-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="mb-4 relative">
+          <div class="carousel rounded-lg overflow-hidden">
+            <div class="carousel-inner">
+              <img *ngFor="let img of product1Images; let i = index"
+                   [src]="img"
+                   [class.hidden]="currentIndex1 !== i"
+                   class="w-full h-48 object-cover" />
+            </div>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">AI-Powered Conversational Assistant Suite</h3>
+        <p class="text-gray-600 mt-2">
+          AI-powered conversational assistant for seamless, intelligent interactions with advanced NLP and voice recognition.
+        </p>
+        <a href="javascript:void(0)" class="text-orange-500 mt-4 inline-block" (click)="openPopup('assistant', $event)">Unlock more choices</a>
+      </div>
+
+      <div class="product-card bg-bluee p-6 rounded-xl text-white shadow-md hover:shadow-lg transition">
+        <div class="mb-4 relative">
+          <div class="carousel rounded-lg overflow-hidden">
+            <div class="carousel-inner">
+              <img *ngFor="let img of product2Images; let i = index"
+                   [src]="img"
+                   [class.hidden]="currentIndex2 !== i"
+                   class="w-full h-48 object-cover" />
+            </div>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold">Intelligent Environmental & Vision Monitoring</h3>
+        <p class="mt-2">
+          Leverage advanced technology to monitor environmental conditions and enhance visual recognition for smarter decision-making.
+        </p>
+        <a href="javascript:void(0)" class="text-orange-500 mt-4 inline-block" (click)="openPopup('monitoring', $event)">Unlock more choices</a>
+      </div>
+
+      <div class="product-card bg-bgblue p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="mb-4 relative">
+          <div class="carousel rounded-lg overflow-hidden">
+            <div class="carousel-inner">
+              <img *ngFor="let img of product3Images; let i = index"
+                   [src]="img"
+                   [class.hidden]="currentIndex3 !== i"
+                   class="w-full h-48 object-cover" />
+            </div>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Predictive Maintenance & Security Solutions</h3>
+        <p class="text-black mt-2">
+          Optimize machinery efficiency and ensure safety through real-time monitoring and proactive maintenance strategies.
+        </p>
+        <a href="javascript:void(0)" class="text-orange-500 mt-4 inline-block" (click)="openPopup('maintenance', $event)">Unlock more choices</a>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="isPopupVisible"
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+  >
+    <div class="bg-steelblue p-8 rounded-lg shadow-lg relative w-[90%] md:w-[70%] h-[570px]">
+      <button
+        class="absolute top-2 right-2 bg-red-500 text-white px-4 py-2 rounded-full mt-3"
+        (click)="closePopup()"
+      >
+        Close
+      </button>
+      <h2 class="text-2xl font-bold text-white mb-4 text-center">Dive Into More Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <ng-container *ngIf="popupCategory === 'assistant'">
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Generative AI Suite</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Empower your creativity with state-of-the-art Generative AI tools. Design, innovate, and bring ideas to life effortlessly with AI-driven content generation for various applications, from visual media to textual content.
+            </p>
+          </div>
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Voice Recognition & Analysis Platform</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Unlock advanced voice recognition capabilities with our cutting-edge platform. Analyze, interpret, and act on voice commands with exceptional accuracy, perfect for intelligent assistants, transcription services, and secure voice authentication.
+            </p>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="popupCategory === 'monitoring'">
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video6.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Environmental Monitoring & Analysis System</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Harness the power of AI to monitor environmental conditions with precision. From air quality to temperature, our system delivers real-time data and actionable insights for smarter decision-making.
+            </p>
+          </div>
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video7.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Smart Vision AI Suite</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Revolutionize visual recognition with Smart Vision AI. Enhance object detection, scene understanding, and surveillance capabilities, ideal for industrial automation, retail, and public safety applications.
+            </p>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="popupCategory === 'maintenance'">
+
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video8.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Predictive Maintenance & Security Hub</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Proactively maintain machinery and ensure operational safety with real-time monitoring and analytics. Reduce downtime, prevent failures, and enhance workplace security with AI-driven predictive insights.
+            </p>
+          </div>
+          <div class="bg-blue-100 p-4 rounded-xl shadow-md">
+            <video class="rounded-lg w-full mb-2" autoplay loop muted>
+              <source src="path/to/video9.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="text-lg font-semibold text-gray-800 text-center">Powered Safety & Security Framework</h3>
+            <p class="text-gray-600 mt-2 text-center">
+              Implement a comprehensive safety and security solution, leveraging AI to detect, prevent, and respond to potential threats. Ideal for safeguarding environments in industrial and public spaces.
+            </p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="bg-white-50 py-16 px-4 mx-auto rounded-tl-3xl rounded-tr-3xl">
+  <div class="container mx-auto text-center">
+
+    <div class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Get in Touch with Us</h2>
+      <p class="text-gray-600 mt-2">
+        Have a question? Want to learn more about our services? We’re here to help.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <button (click)="toggleForm()" class="bg-bluee text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+        Have any questions?
+      </button>
+    </div>
+
+    <div id="contactForm" class="bg-white p-6 w-full sm:w-3/4 lg:w-1/2 xl:w-1/3 rounded-xl shadow-lg hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 transition-transform duration-300 flex flex-col">
+      <div class="bg-gray-200 w-full py-3 rounded-t-xl text-center">
+        <h3 class="text-xl font-semibold text-gray-800">Ask Your Query</h3>
+      </div>
+
+      <div class="mt-auto">
+        <form (submit)="handleFormSubmit($event)" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-600 font-medium mb-2">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+              class="w-full p-4 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-gray-600 font-medium mb-2">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+              class="w-full p-4 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-gray-600 font-medium mb-2">Your Query</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              placeholder="Write your query here"
+              class="w-[400px] p-4 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300"
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="bg-blue-600 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+              Send Query
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="successMessage" class="hidden text-green-600 font-medium mt-6 text-lg">
+      Thank you for contacting us! We’ll get back to you soon.
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="bg-steelblue text-white py-12">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">About Zyrix</h3>
+        <p class="text-sm text-gray-200 text-justify leading-relaxed">
+          At Zyrix, we create cutting-edge AI and technology solutions designed to transform industries and improve lives.
+        </p>
+        <a href="#" class="text-orange-400 hover:underline mt-4 inline-block">Learn more</a>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Legal</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">Privacy Policy</a></li>
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">Terms of Service</a></li>
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Help</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">FAQs</a></li>
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">Support Center</a></li>
+          <li><a href="#" class="text-sm text-gray-200 hover:text-orange-400 block">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Stay Updated</h3>
+        <p class="text-sm text-gray-200 leading-relaxed mb-4 text-justify">
+          Subscribe to our newsletter for the latest updates and insights.
+        </p>
+        <form class="flex flex-col sm:flex-row">
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full sm:w-auto flex-grow p-2 h-12 text-gray-800 focus:outline-none rounded-l-lg"
+          >
+          <button
+            type="submit"
+            class="bg-orange-400 hover:bg-orange-500 text-white px-4 h-12 rounded-r-lg sm:mt-0"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="my-8 border-gray-600">
+    <div class="flex flex-col items-center mt-8">
+      <div class="flex mb-4 justify-center space-x-4">
+        <a href="#" class="text-white hover:text-orange-400 text-lg">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white hover:text-orange-400 text-lg">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white hover:text-orange-400 text-lg">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="text-white hover:text-orange-400 text-lg">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="text-sm text-gray-300 text-center">© 2024 Zyrix. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
